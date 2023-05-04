@@ -8,7 +8,11 @@ import microfrontendLayout from './microfrontend-layout.html';
 
 import './index.css';
 
-const routes = constructRoutes(microfrontendLayout);
+const routes = constructRoutes(microfrontendLayout, {
+  props: {
+    basename: '/configure/cra',
+  },
+});
 // const routes = constructRoutes({
 //   routes: [
 //     {
