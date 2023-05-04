@@ -1,0 +1,11 @@
+{
+  "imports": {
+    "@dc/main": "//localhost:9000/dc-main.js",
+    "@dc/navbar": "//localhost:7400/navbar/dist/dc-navbar.js",
+    "@dc/configure": "//localhost:7400/configure/dist/dc-configure.js",
+    "@dc/state": "//localhost:7400/state/dist/dc-state.js",
+    "@dc/source": "//localhost:7400/source/dist/dc-source.js",
+    "@dc/device": "//localhost:7400/device/dist/dc-device.js",
+    "@dc/cra": "//localhost:7400/cra/dist/dc-cra.js"
+  }
+}

@@ -46,19 +46,8 @@
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
 
   <% if (isLocal) { %>
-    <script type="systemjs-importmap">
-    {
-      "imports": {
-        "@dc/main": "//localhost:9000/dc-main.js",
-        "@dc/navbar": "//localhost:9001/dc-navbar.js",
-        "@dc/configure": "//localhost:9002/dc-configure.js",
-        "@dc/state": "//localhost:9003/dc-state.js",
-        "@dc/source": "//localhost:9004/dc-source.js",
-        "@dc/device": "//localhost:9005/dc-device.js",
-        "@dc/cra": "//localhost:9006/dc-cra.js"
-      }
-    }
-  </script>
+    <script type="systemjs-importmap" src="//localhost:7400/importmap.json">
+    </script>
     <% } %>
 
       <!--
