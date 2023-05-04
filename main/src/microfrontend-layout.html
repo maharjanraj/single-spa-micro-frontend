@@ -1,0 +1,21 @@
+<single-spa-router>
+  <div class="root">
+    <nav class="sidenav">
+      <application name="@dc/navbar"></application>
+    </nav>
+    <main>
+      <route path="configure" exact="true">
+        <application name="@dc/configure"></application>
+      </route>
+      <route path="configure/source">
+        <application name="@dc/source"></application>
+      </route>
+      <route path="configure/device">
+        <application name="@dc/device"></application>
+      </route>
+      <route path="configure/cra">
+        <application name="@dc/cra"></application>
+      </route>
+    </main>
+  </div>
+</single-spa-router>

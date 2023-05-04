@@ -1,0 +1,11 @@
+{
+  "urlSafeList": ["https://unpkg.com/", "https://my-organization-cdn.com/"],
+  "username": "admin",
+  "password": "1234",
+  "manifestFormat": "importmap|sofe",
+  "locations": {
+    "default": "import-map.json",
+    "prod": "s3://cdn.canopytax.com/import-map.json",
+    "test": "import-map-test.json"
+  }
+}

@@ -1,0 +1,36 @@
+/* Style the small cards container */
+.small-cards {
+  display: flex;
+}
+
+/* Style the small cards */
+.small-card {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border: 1px solid #cbc0c0;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-card:hover {
+  cursor: pointer;
+}
+
+/* Style the small card title */
+.small-card h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Style the small card content */
+.small-card p {
+  font-size: 1rem;
+  margin: 0;
+}

@@ -1,0 +1,29 @@
+/* Style the navigation sidebar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the links inside the navigation sidebar */
+nav a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Add hover styles to the links inside the navigation sidebar */
+nav a:hover {
+  background-color: #ddd;
+}
+
+/* Style the main content area */
+main {
+  margin-left: 200px;
+  padding: 20px;
+}
