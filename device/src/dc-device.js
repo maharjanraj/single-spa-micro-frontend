@@ -1,7 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import singleSpaReact from "single-spa-react";
-import Root from "./root.component";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import singleSpaReact from 'single-spa-react';
+import Root from './device.component';
 
 const lifecycles = singleSpaReact({
   React,
@@ -14,3 +14,4 @@ const lifecycles = singleSpaReact({
 });
 
 export const { bootstrap, mount, unmount } = lifecycles;
+export { default as Devices } from './device.component';

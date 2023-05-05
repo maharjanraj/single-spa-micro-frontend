@@ -1,5 +1,4 @@
 [
   { "label": "Source", "path": "/configure/source", "icon": "" },
-  { "label": "Device", "path": "/configure/device", "icon": "" },
   { "label": "CRA", "path": "/configure/cra", "icon": "" }
 ]

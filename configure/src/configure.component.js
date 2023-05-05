@@ -1,20 +1,21 @@
-import { fetchEntities } from '@dc/state';
+import { fetchRoutes } from '@dc/state';
 import { useEffect, useState } from 'react';
 
 import './configure.css';
 import { navigateToUrl } from 'single-spa';
 
 function Configure(props) {
-  console.log(props);
-  const [entities, setEntities] = useState([]);
+  const [routes, setRoutes] = useState([]);
 
   useEffect(() => {
-    fetchEntities().then(setEntities);
+    fetchRoutes().then(setRoutes);
   }, []);
+
+  console.log('Routes::', routes);
 
   return (
     <div className='small-cards'>
-      {entities.map((entity) => (
+      {routes.map((entity) => (
         <div
           onClick={() => navigateToUrl(entity.path)}
           key={entity.label}

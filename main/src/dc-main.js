@@ -5,12 +5,14 @@ import {
   constructLayoutEngine,
 } from 'single-spa-layout';
 import microfrontendLayout from './microfrontend-layout.html';
+import { Devices } from '@dc/device';
 
 import './index.css';
 
 const routes = constructRoutes(microfrontendLayout, {
   props: {
     basename: '/configure/cra',
+    devices: Devices,
   },
 });
 // const routes = constructRoutes({

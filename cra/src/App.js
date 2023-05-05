@@ -18,7 +18,7 @@ function App(props) {
             </li>
           </ul>
           <Routes>
-            <Route path='page1' element={<Page1 />} />
+            <Route path='page1' element={<Page1 {...props} />} />
             <Route path='page2' element={<Page2 />} />
           </Routes>
         </div>
