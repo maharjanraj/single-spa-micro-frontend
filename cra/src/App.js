@@ -7,6 +7,7 @@ import './App.css';
 function App(props) {
   return (
     <div>
+      <div id='single-spa-application:mf'></div>
       <Router basename={props.basename}>
         <div>
           <ul>

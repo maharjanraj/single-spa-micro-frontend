@@ -74,5 +74,19 @@ const layoutEngine = constructLayoutEngine({ routes, applications });
 
 applications.forEach(registerApplication);
 
+let shareScope = [];
+
+registerApplication({
+  name: 'mf',
+  app: () =>
+    System.import('mf').then((app) => {
+      app.init(shareScope); // < — — initializing app1 with shareScope
+      return app.get('Header').then((module) => {
+        return module();
+      });
+    }),
+  activeWhen: () => location.pathname.startsWith('/configure/cra'),
+});
+
 layoutEngine.activate();
 start();
